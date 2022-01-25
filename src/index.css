@@ -1,4 +1,6 @@
 body {
+  background-color: rgb(24,26,27) !important;
+  color: rgb(221, 218, 214) !important;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +12,99 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.ant-drawer-content-wrapper {
+  max-width: 720px !important;
+  position: relative;
+  width: 100% !important;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background: #373b53;
+  background-color: rgb(44,47,66);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 100; 
+}
+
+.invoice-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.invoice-header {
+  align-items: center;
+  display: grid;
+  gap: 18px;
+  grid-gap: 18px;
+  grid-template-columns: 1fr auto auto;
+}
+
+.ant-form-item-control-input-content {
+  display: flex;
+  gap: 5%;
+}
+
+.dynamic-delete-button svg {
+  font-size: 1.2rem;
+}
+
+.drawer-footer {
+  background-color: #aaa;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 0.5rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  
+  .app-wrapper {
+    align-items: center;
+    flex-direction: row;
+    min-height: 100vh;
+  }
+  
+  .app-header {
+    align-self: flex-start;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .invoice-container {
+    align-self: flex-start;
+    margin: 0 auto;
+    max-width: 730px;
+    width: 100%;
+  }
+
+  .invoice-header {
+   padding: 72px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+  .invoice-container {
+    padding: 0 48px;
+  }
+
+  .invoice-header {
+    gap: 40px;
+    grid-gap: 40px;
+    padding: 56px 0;
+  }
 }
