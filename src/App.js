@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import useStickyState from './utils/useStickyState';
 import "antd/dist/antd.css";
 import { Button, Col, DatePicker, Drawer, Form, Input, Row, Select, Space } from 'antd';
 import { DeleteFilled, DownOutlined, MinusCircleOutlined, PlusOutlined } from '@ant-design/icons';
@@ -11,6 +12,11 @@ function App() {
   const { TextArea } = Input;
 
   const [open, setOpen] = useState(false);
+  const [theme, setTheme] = useStickyState('dark', 'theme');
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  });
 
   const [form] = Form.useForm();
 
