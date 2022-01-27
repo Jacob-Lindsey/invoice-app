@@ -1,0 +1,248 @@
+.container {
+	background: #fff;
+	padding: 24px;
+	margin-bottom: 80px;
+	border-radius: 8px;
+	box-shadow: 0 10px 10px -10px rgba(72, 84, 159, 0.1);
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 'header .' 'senderAddress .' 'invoiceDate billTo' ' invoiceDue billTo' 'clientEmail clientEmail' 'items items';
+	row-gap: 30px;
+}
+
+.title {
+	color: #7e88c3;
+}
+
+.text {
+	color: #0c0e16;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.address {
+	line-height: 1.8;
+	font-size: 1.1rem;
+}
+
+.head {
+	display: grid;
+	grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
+	padding: 32px 32px 0;
+	color: #7e88c3;
+	font-weight: 500;
+	font-size: 1.1rem;
+	background: #f9fafe;
+	border-radius: 8px 8px 0 0;
+}
+
+.head .group {
+	justify-self: end;
+}
+
+.group.name {
+	justify-self: start;
+}
+
+.header {
+	grid-area: header;
+	color: #7e88c3;
+}
+
+.header .id {
+	color: #0c0e16;
+	font-weight: 700;
+	margin: 0 0 4px;
+}
+
+.id span {
+	color: #7e88c3;
+}
+
+.description {
+	margin: 0;
+}
+
+.senderAddress {
+	grid-area: senderAddress;
+	color: #7e88c3;
+}
+
+.senderAddress .title {
+	margin: 0;
+}
+
+.invoiceDate {
+	grid-area: invoiceDate;
+}
+
+.invoiceDate .title {
+	margin: 0 0 12px;
+}
+
+.invoiceDate .text {
+	margin: 0;
+}
+
+.invoiceDue {
+	grid-area: invoiceDue;
+}
+
+.invoiceDue .title {
+	margin: 0 0 12px;
+}
+
+.invoiceDue .text {
+	margin: 0;
+}
+
+.billTo {
+	grid-area: billTo;
+}
+
+.billTo .title {
+	margin: 0 0 12px;
+}
+
+.billTo .text {
+	margin: 0 0 8px;
+}
+
+.billTo .address {
+	margin: 0;
+}
+
+.clientEmail {
+	grid-area: clientEmail;
+}
+
+.clientEmail .title {
+	margin: 0 0 12px;
+}
+
+.clientEmail .text {
+	margin: 0;
+}
+
+.items {
+	grid-area: items;
+	border-radius: 8px;
+}
+
+.list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	background: #f9fafe;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.list .item {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 'title total' 'quantity total';
+}
+
+.item .title {
+	grid-area: title;
+	color: #0c0e16;
+	font-weight: 700;
+	margin: 0 0 8px;
+}
+
+.item .quantity {
+	grid-area: quantity;
+	color: #7e88c3;
+	font-weight: 700;
+	margin: 0;
+}
+
+.item .total {
+	grid-area: total;
+	justify-self: end;
+	font-weight: 700;
+	color: #0c0e16;
+	margin: 0;
+	align-self: center;
+}
+
+.grandTotal {
+	background: #373b53;
+	border-radius: 0 0 8px 8px;
+	padding: 24px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.grandTotal .title {
+	margin: 0;
+	color: #fff;
+}
+
+.grandTotal .text {
+	margin: 0;
+	color: #fff;
+	font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		padding: 32px;
+		margin-bottom: 0;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: 'header . senderAddress' 'invoiceDate billTo clientEmail' 'invoiceDue billTo .' 'items items items';
+	}
+
+	.id {
+		font-size: 1.5rem;
+	}
+
+	.senderAddress {
+		justify-self: end;
+	}
+
+	.senderAddress .address {
+		text-align: right;
+	}
+
+	.items {
+		margin-top: 18px;
+	}
+
+	.list {
+		padding: 32px;
+		gap: 32px;
+	}
+
+	.list .item {
+		grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
+		grid-template-areas: 'title quantity price total';
+	}
+
+	.item .title {
+		margin: 0;
+	}
+
+	.quantity {
+		justify-self: end;
+	}
+
+	.price {
+		grid-area: price;
+		margin: 0;
+		justify-self: end;
+		font-weight: 700;
+		color: #7e88c3;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		padding: 48px;
+	}
+}

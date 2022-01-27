@@ -1,0 +1,32 @@
+.button {
+	padding: 16px 20px;
+	border: 1px solid #dfe3fa;
+	font-size: 1.2rem;
+	font-weight: 700;
+	width: 100%;
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-between;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+.button svg {
+	width: 16px;
+	height: 16px;
+	color: #7e88c3;
+}
+
+.button:hover {
+	border-color: #7c5dfa;
+}
+
+.button:disabled {
+	pointer-events: none;
+	border-color: #dfe3fa;
+}
+
+.button:disabled svg {
+	color: #dfe3fa;
+}

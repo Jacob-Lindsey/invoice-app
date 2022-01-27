@@ -1,0 +1,12 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+	.wrapper {
+		flex-direction: row;
+		align-items: center;
+		min-height: 100vh;
+	}
+}

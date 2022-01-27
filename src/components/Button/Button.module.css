@@ -1,0 +1,82 @@
+.button {
+	padding: 16px 24px;
+	border: none;
+	border-radius: 24px;
+	font-weight: 700;
+	font-size: 12px;
+	cursor: pointer;
+	transition: background 250ms ease-in;
+}
+
+.button.small {
+	padding: 16px;
+}
+
+.button.primary {
+	background: #7c5dfa;
+	color: #fff;
+}
+
+.button.primary:hover {
+	background: #9277ff;
+}
+
+.button.edit {
+	background: #f9fafe;
+	color: #7e88c3;
+}
+
+.button.edit:hover {
+	background: #dfe3fa;
+}
+
+.button.delete {
+	background: #ec5757;
+	color: #fff;
+}
+
+.button.delete:hover {
+	background: #ff9797;
+}
+
+.button.draft {
+	background: #373b53;
+	color: #888eb0;
+}
+
+.button.draft:hover {
+	background: #0c0e16;
+}
+
+.newInvoice {
+	padding-left: 46px;
+	position: relative;
+}
+
+.newInvoice::before {
+	position: absolute;
+	left: 6px;
+	top: 50%;
+	transform: translateY(-50%);
+	content: '+';
+	background: #fff;
+	color: #7c5dfa;
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+	.newInvoice {
+		padding-left: 56px;
+		padding-right: 16px;
+	}
+
+	.newInvoice::before {
+		left: 8px;
+	}
+}

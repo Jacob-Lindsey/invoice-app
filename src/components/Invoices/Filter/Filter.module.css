@@ -1,0 +1,71 @@
+.container {
+	position: relative;
+}
+
+.filter {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	border: none;
+	background: transparent;
+	gap: 12px;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
+.filter svg {
+	transition: 300ms ease-in;
+}
+
+.filter:hover svg {
+	transform: rotate(180deg);
+}
+
+.list {
+	position: absolute;
+	z-index: 100;
+	top: 46px;
+	left: -50px;
+	width: 192px;
+	margin: 0;
+	background: #fff;
+	border-radius: 8px;
+	padding: 24px;
+	list-style: none;
+	box-shadow: 0 10px 20px 0 rgba(72, 84, 159, 0.25);
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 16px;
+}
+
+.option {
+	border: none;
+	display: block;
+	width: 100%;
+	font-size: 1.2rem;
+	text-align: left;
+	background: transparent;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.option::before {
+	content: '';
+	width: 16px;
+	height: 16px;
+	background: #dfe3fa;
+	margin-right: 13px;
+	border-radius: 2px;
+	display: inline-block;
+}
+
+.item:hover .option::before {
+	border: 1px solid #7c5dfa;
+}
+
+.active.option::before {
+	background-color: #7c5dfa;
+	/* background-image: url(../../../assets/icon-check.svg); */
+	background-repeat: no-repeat;
+	background-position: center;
+}

@@ -1,0 +1,57 @@
+.container {
+	position: relative;
+}
+
+.button {
+	padding: 16px 20px;
+	border: 1px solid #dfe3fa;
+	font-size: 1.2rem;
+	font-weight: 700;
+	width: 100%;
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-between;
+	background: transparent;
+	cursor: pointer;
+}
+
+.button:hover {
+	border-color: #7c5dfa;
+}
+
+.button svg {
+	color: #7c5dfa;
+	transition: transform 350ms ease-in-out;
+}
+
+.button:hover svg {
+	transform: rotate(180deg);
+}
+
+.termList {
+	position: absolute;
+	margin-top: 8px;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0 10px 20px rgba(72, 84, 159, 0.25);
+}
+
+.termItem {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #dfe3fa;
+	padding: 16px 24px;
+	text-align: left;
+	font-size: 1.2rem;
+	font-weight: 700;
+	transition: color 300ms ease-in;
+	cursor: pointer;
+}
+
+.termItem:hover {
+	color: #7c5dfa;
+}

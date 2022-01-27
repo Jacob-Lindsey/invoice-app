@@ -1,0 +1,141 @@
+.container {
+	border: none;
+	padding: 0;
+	margin: 26px 0 0;
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+
+.title {
+	font-size: 1.8rem;
+	color: #777f98;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+
+.itemList {
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+}
+
+.header {
+	display: grid;
+	grid-template-columns:
+		214px minmax(46px, 50px) 100px minmax(36px, 50px)
+		auto;
+	gap: 16px;
+}
+
+.header label {
+	font-weight: 500;
+	color: #7e88c3;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.wrapper label {
+	font-weight: 500;
+	color: #7e88c3;
+}
+
+.wrapper input {
+	padding: 16px 20px;
+	border: 1px solid #dfe3fa;
+	color: #0c0e16;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+.wrapper input:disabled {
+	background: transparent;
+	border: none;
+	color: #888eb0;
+	padding: 16px 0;
+}
+
+.wrapper.error label {
+	color: #ec5757;
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrapper.error input {
+	border-color: #ec5757;
+}
+
+.group {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(64px, 1fr));
+	gap: 16px;
+}
+
+.delIcon {
+	background: transparent;
+	align-self: end;
+	padding: 16px 20px;
+	display: flex;
+	justify-content: flex-end;
+	border: none;
+	cursor: pointer;
+}
+
+.delIcon:hover svg path {
+	fill: #ec5757;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		margin: 0;
+	}
+
+	.title {
+		margin-bottom: 16px;
+	}
+
+	.itemList {
+		gap: 16px;
+	}
+
+	.item {
+		display: grid;
+		grid-template-columns: 214px 1fr;
+		gap: 16px;
+	}
+
+	.wrapper input[name='quantity'] {
+		padding: 16px 10px;
+		text-align: center;
+	}
+
+	.wrapper input:disabled {
+		padding: 16px 0;
+	}
+
+	.group {
+		grid-template-columns:
+			minmax(46px, 50px) 100px minmax(36px, 50px)
+			auto;
+	}
+
+	.wrapper input:disabled {
+		padding: 16px 0;
+	}
+
+	.delIcon {
+		padding: 0;
+		align-self: center;
+		justify-content: start;
+	}
+}

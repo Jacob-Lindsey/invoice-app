@@ -1,0 +1,136 @@
+.title {
+	margin: 24px 0;
+	font-size: 2.4rem;
+	color: #0c0e16;
+}
+
+.title span {
+	color: #888eb0;
+}
+
+.form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.formGroup {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	border: none;
+	padding: 0;
+}
+
+.formGroupTitle {
+	margin-bottom: 24px;
+	color: #7c5dfa;
+	font-weight: 700;
+}
+
+.inputWrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.inputWrapper .label {
+	color: #7e88c3;
+	font-weight: 500;
+	display: flex;
+	justify-content: space-between;
+}
+
+.inputWrapper .input {
+	width: 100%;
+	border: 1px solid #dfe3fa;
+	padding: 16px 20px;
+	border-radius: 4px;
+	color: #0c0e16;
+	font-weight: 700;
+}
+
+.inputWrapper .input:focus {
+	outline: none;
+	border: 1px solid #7c5dfa;
+}
+
+.inputWrapper.error .label {
+	color: #ec5757;
+}
+
+.inputWrapper.error .input {
+	border-color: #ec5757;
+}
+
+.inputGroupAddress {
+	display: grid;
+	gap: 24px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 'city postCode' 'country country';
+}
+
+.inputGroupAddress .country {
+	grid-area: country;
+}
+
+.inputGroupOptions {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.inputGroupOptions .description {
+	grid-area: description;
+}
+
+.errorContainer {
+	display: flex;
+	flex-direction: column;
+}
+
+.error {
+	font-size: 1rem;
+	color: #ec5757;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+	.title {
+		margin: 0 0 48px;
+	}
+
+	.form {
+		height: 100%;
+		overflow-y: scroll;
+		padding-right: 16px;
+		padding-bottom: 60px;
+		gap: 48px;
+		overflow-x: hidden;
+	}
+
+	::-webkit-scrollbar {
+		width: 8px;
+		height: 120px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: #dfe3fa;
+		border-radius: 4px;
+		background-clip: padding-box;
+		margin-left: 16px;
+	}
+
+	.inputGroupAddress {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-areas: 'city postCode country';
+	}
+
+	.inputGroupOptions {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: 'invoiceDate paymentTerms' 'description description';
+	}
+}

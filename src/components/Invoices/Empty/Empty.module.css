@@ -1,0 +1,26 @@
+.container {
+	text-align: center;
+	margin: 70px auto;
+	max-width: 242px;
+	width: 100%;
+}
+
+.image {
+	width: 100%;
+}
+
+.title {
+	font-size: 2rem;
+	margin: 40px 0 24px;
+}
+
+.tagline {
+	color: #888eb0;
+	font-size: 1.2rem;
+	font-weight: 500;
+	padding: 2px;
+}
+
+.tagline span {
+	font-weight: 700;
+}
