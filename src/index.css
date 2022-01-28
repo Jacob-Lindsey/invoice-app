@@ -14,6 +14,8 @@ html {
 	--bg-color: #242830;
 	--bg-color-80: #2c303a;
 	--bg-color-60: #373c47;
+	--shadow-color: #1c20278c;
+	--input-bg: #1d2129;
 	--text-color: #eee;
 	--text-color-secondary: #98a3ec;
 	--text-color-disabled: #b8b8b8;
@@ -22,11 +24,27 @@ html {
 	--button-success: #00bc69;
 	--button-utility: #7653be;
 	--button-danger: #ff5b35;
+	--toggle-color: #242830;
+	--global-text-color-1: #eee;
+	--global-text-color-2: #98a3ec;
+	--global-bg-color-1: #2c303a;
 }
 
-[date-theme="light"] {
+[data-theme="light"] {
 	--bg-color: #e4e0dc;
-	--text-color: #111;
+	--bg-color-80: #c4c0bd;
+	--bg-color-60: #b9b9b9;
+	--shadow-color: #d1cdc97e;
+	--input-bg: #e4e0dc;
+	--text-color: rgb(29, 27, 27);
+	--text-color-secondary: #2f3a7e;
+	--text-color-disabled: rgb(43, 39, 39);
+	--accent-color: #373b53;
+	--button-primary: #00a3ed;
+	--button-success: #00bc69;
+	--button-utility: #7653be;
+	--button-danger: #ff5b35;
+	--toggle-color: #2f3a7e;
 }
 
 html.theme-transition,

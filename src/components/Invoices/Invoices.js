@@ -23,6 +23,7 @@ const Invoices = () => {
 			<header className={styles.header}>
 				<div className={styles.info}>
 					<h1>Invoices</h1>
+					<span>( {filteredInvoices.length} )</span>
 					{/* <span>
 						{invoiceMessage(filteredInvoices, filterType, windowWidth)}
 					</span> */}

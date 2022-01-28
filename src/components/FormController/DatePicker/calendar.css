@@ -1,5 +1,6 @@
 .calender {
-	background: #fff;
+	background: var(--bg-color);
+	color: var(--text-color);
 	border: none;
 	box-shadow: 0 10px 20px 0 rgba(72, 84, 159, 0.25);
 	font-family: 'Spartan', sans-serif;
@@ -21,7 +22,8 @@
 }
 
 .calender .react-datepicker__header {
-	background: #fff;
+	background: var(--bg-color);
+	color: var(--text-color);
 	border: none;
 	display: flex;
 	flex-direction: column;
@@ -29,7 +31,8 @@
 }
 
 .calender .react-datepicker__current-month {
-	font-size: 1.2rem;
+	color: var(--text-color);
+	font-size: 1.35rem;
 }
 
 .calender .react-datepicker__month {
@@ -40,9 +43,14 @@
 }
 
 .calender .react-datepicker__day-names {
+	color: var(--text-color);
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
 	gap: 14px;
+}
+
+.calender .react-datepicker__day-names .react-datepicker__day-name {
+	color: var(--text-color);
 }
 
 .calender .react-datepicker__week {

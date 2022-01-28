@@ -1,5 +1,6 @@
 .container {
-	background: var(--bg-color-80);
+	background: #2c303a;
+	color: var(--global-text-color-2);
 	padding: 24px;
 	margin-bottom: 80px;
 	border-radius: 8px;
@@ -11,7 +12,7 @@
 }
 
 .title {
-	color: var(--text-color-secondary);
+	color: var(--global-text-color-2);
 }
 
 .text {
@@ -26,11 +27,11 @@
 }
 
 .head {
-	background-color: var(--bg-color);
+	background-color: #242830;
 	display: grid;
 	grid-template-columns: 1.5fr 0.5fr 1fr 1fr;
 	padding: 32px 32px 8px 32px;
-	color: var(--text-color);
+	color: var(--global-text-color-1);
 	font-weight: 500;
 	font-size: 1.1rem;
 	border-radius: 8px 8px 0 0;
@@ -46,11 +47,11 @@
 
 .header {
 	grid-area: header;
-	color: var(--text-color-secondary);
+	color: var(--global-text-color-2);
 }
 
 .header .id {
-	color: var(--text-color);
+	color: var(--global-text-color-1);
 	font-weight: 700;
 	margin: 0 0 4px;
 }
@@ -65,7 +66,7 @@
 
 .senderAddress {
 	grid-area: senderAddress;
-	color: var(--text-color-secondary);
+	color: var(--global-text-color-2);
 }
 
 .senderAddress .title {
@@ -130,7 +131,7 @@
 }
 
 .list {
-	background-color: var(--bg-color-60);
+	background-color: #373c47;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -148,14 +149,14 @@
 
 .item .title {
 	grid-area: title;
-	color: var(--text-color);
+	color: var(--global-text-color-1);
 	font-weight: 700;
 	margin: 0 0 8px;
 }
 
 .item .quantity {
 	grid-area: quantity;
-	color: var(--text-color-secondary);
+	color: var(--global-text-color-2);
 	font-weight: 700;
 	margin: 0;
 }
@@ -164,16 +165,16 @@
 	grid-area: total;
 	justify-self: end;
 	font-weight: 700;
-	color: var(--text-color);
+	color: var(--global-text-color-1);
 	margin: 0;
 	align-self: center;
 }
 
 .grandTotal {
-	background: var(--bg-color);
+	background: #242830;
 	border-radius: 0 0 8px 8px;
 	padding: 24px;
-	color: #fff;
+	color: var(--global-text-color-1);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -181,13 +182,17 @@
 
 .grandTotal .title {
 	margin: 0;
-	color: var(--text-color);
+	color: var(--global-text-color-1);
 }
 
 .grandTotal .text {
 	margin: 0;
-	color: var(--text-color);
+	color: var(--global-text-color-1);
 	font-size: 2rem;
+}
+
+.text {
+	color: var(--global-text-color-1);
 }
 
 @media screen and (min-width: 768px) {
@@ -237,7 +242,7 @@
 		margin: 0;
 		justify-self: end;
 		font-weight: 700;
-		color: var(--text-color-secondary);
+		color: var(--global-text-color-2);
 	}
 }
 

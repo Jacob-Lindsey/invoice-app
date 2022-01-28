@@ -9,7 +9,8 @@
 
 .label {
     align-items: center;
-    border: 1px solid #ccc;
+    background-color: var(--toggle-color);
+    border: 1px solid var(--text-color-disabled);
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -32,18 +33,25 @@
     width: 40%;
 }
 
-.toggleChecked {
+.toggleChecked, 
+.toggleUnchecked {
     opacity: 0;
 }
 
 .switch:checked + .label .toggleChecked {
     border-color: transparent;
+    fill: #03a9f4;
     opacity: 1;
     transform: rotate(360deg);
 }
 
 .switch:checked + .label .toggleUnchecked {
     opacity: 0;
+}
+
+.switch + .label .toggleUnchecked {
+    fill: #eedf10;
+    opacity: 1;
     transform: rotate(180deg);
 }
 

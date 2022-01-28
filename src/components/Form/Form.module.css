@@ -25,7 +25,7 @@
 
 .formGroupTitle {
 	margin-bottom: 24px;
-	color: var(--text-color);
+	color: var(--text-color-secondary);
 	font-weight: 700;
 }
 
@@ -44,7 +44,7 @@
 
 .inputWrapper .input {
 	width: 100%;
-	background-color: var(--bg-color);
+	background-color: var(--input-bg);
 	border: 1px solid var(--accent-color);
 	padding: 16px 20px;
 	border-radius: 4px;
@@ -118,7 +118,7 @@
 	}
 
 	::-webkit-scrollbar-thumb {
-		background: #dfe3fa;
+		background: var(--global-bg-color-1);
 		border-radius: 4px;
 		background-clip: padding-box;
 		margin-left: 16px;
