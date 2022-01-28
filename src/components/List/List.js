@@ -67,14 +67,14 @@ const List = () => {
                                     onChange={(e) => handleInvoiceChange(e, 'items', null, index)}
                                 />
                             </div>
-                            <div className={`${styles.wrapper} ${errors[index]?.total ? styles.error : ''}`}>
+                            <div className={styles.wrapper}>
                                 {!isDesktop && <label htmlFor='total'>Total</label>}
                                 <input 
                                     type='text'
-                                    name='totla'
+                                    name='total'
                                     id='total'
+                                    disabled
                                     value={item.total}
-                                    onChange={(e) => handleInvoiceChange(e, 'items', null, index)}
                                 />
                             </div>
                             <button
