@@ -8,5 +8,6 @@
 		flex-direction: row;
 		align-items: center;
 		min-height: 100vh;
+		padding-top: 72px;
 	}
 }

@@ -1,5 +1,4 @@
 import { useGlobalContext } from '../../context';
-
 import styles from './InvoiceInfo.module.css';
 
 const InvoiceInfo = ({ invoice }) => {

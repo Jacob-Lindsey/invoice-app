@@ -1,8 +1,8 @@
 .header {
 	display: flex;
-	justify-content: space-between;
-	height: 72px;
-	background: #373b53;
+	justify-content: flex-end;
+	height: 48px;
+	background: var(--accent-color);
 	overflow: hidden;
 	position: sticky;
 	top: 0;
@@ -12,10 +12,11 @@
 .actions {
 	display: flex;
 	align-items: center;
+	padding: 16px 24px;
 }
 
 .theme-icon {
-	padding-right: 2.4rem;
+	padding-right: 2rem;
 	display: flex;
 	align-items: center;
 }
@@ -49,17 +50,14 @@
 
 @media screen and (min-width: 1024px) {
 	.header {
-		height: 100vh;
-		flex-direction: column;
 		align-self: flex-start;
+		height: 72px;
+		position: absolute;
+		width: 100vw;
 	}
-
-	.actions {
-		flex-direction: column;
-	}
-
+	
 	.theme-icon {
-		padding: 32px;
+		padding: 24px;
 	}
 
 	.profile {

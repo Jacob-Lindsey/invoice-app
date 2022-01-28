@@ -1,7 +1,7 @@
 .button {
 	padding: 16px 24px;
 	border: none;
-	border-radius: 24px;
+	border-radius: 2px;
 	font-weight: 700;
 	font-size: 12px;
 	cursor: pointer;
@@ -13,21 +13,13 @@
 }
 
 .button.primary {
-	background: #7c5dfa;
+	background: var(--button-success);
 	color: #fff;
 }
 
-.button.primary:hover {
-	background: #9277ff;
-}
-
 .button.edit {
-	background: #f9fafe;
-	color: #7e88c3;
-}
-
-.button.edit:hover {
-	background: #dfe3fa;
+	background: var(--button-primary);
+	color: #fff;
 }
 
 .button.delete {
@@ -35,25 +27,31 @@
 	color: #fff;
 }
 
-.button.delete:hover {
-	background: #ff9797;
-}
-
 .button.draft {
-	background: #373b53;
-	color: #888eb0;
+	background: var(--button-utility);
+	color: #fff;
 }
 
+.button.primary,
+.button.delete,
+.button.edit,
+.button.draft {
+	transition: all 0.2s ease;
+}
+
+.button.primary:hover,
+.button.delete:hover,
+.button.edit:hover,
 .button.draft:hover {
-	background: #0c0e16;
+	filter: brightness(0.9);
 }
 
 .newInvoice {
-	padding-left: 46px;
+	padding-left: 16px;
 	position: relative;
 }
 
-.newInvoice::before {
+/* .newInvoice::before {
 	position: absolute;
 	left: 6px;
 	top: 50%;
@@ -68,11 +66,11 @@
 	align-items: center;
 	justify-content: center;
 	font-size: 24px;
-}
+} */
 
 @media screen and (min-width: 768px) {
 	.newInvoice {
-		padding-left: 56px;
+		padding-left: 16px;
 		padding-right: 16px;
 	}
 

@@ -9,7 +9,7 @@
 
 .title {
 	font-size: 1.8rem;
-	color: #777f98;
+	color: var(--text-color);
 	font-weight: 700;
 	margin-bottom: 24px;
 }
@@ -30,7 +30,7 @@
 
 .header label {
 	font-weight: 500;
-	color: #7e88c3;
+	color: var(--text-color);
 }
 
 .item {
@@ -52,8 +52,9 @@
 
 .wrapper input {
 	padding: 16px 20px;
-	border: 1px solid #dfe3fa;
-	color: #0c0e16;
+	background-color: var(--bg-color);
+	border: 1px solid var(--accent-color);
+	color: var(--text-color);
 	font-weight: 700;
 	font-size: 1.2rem;
 }
@@ -91,7 +92,11 @@
 	cursor: pointer;
 }
 
-.delIcon:hover svg path {
+.delIcon svg {
+	fill: var(--text-color);
+}
+
+.delIcon:hover svg {
 	fill: #ec5757;
 }
 

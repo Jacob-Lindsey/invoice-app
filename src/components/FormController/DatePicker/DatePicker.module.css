@@ -1,13 +1,14 @@
 .button {
 	padding: 16px 20px;
-	border: 1px solid #dfe3fa;
+	border: 1px solid var(--accent-color);
+	color: var(--text-color);
 	font-size: 1.2rem;
 	font-weight: 700;
 	width: 100%;
 	border-radius: 4px;
 	display: flex;
 	justify-content: space-between;
-	background: transparent;
+	background: var(--bg-color);
 	position: relative;
 	cursor: pointer;
 }
@@ -19,7 +20,7 @@
 }
 
 .button:hover {
-	border-color: #7c5dfa;
+	border-color: var(--text-color-secondary);
 }
 
 .button:disabled {

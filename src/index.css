@@ -10,14 +10,42 @@ html {
 	height: 100%;
 }
 
+:root {
+	--bg-color: #242830;
+	--bg-color-80: #2c303a;
+	--bg-color-60: #373c47;
+	--text-color: #eee;
+	--text-color-secondary: #98a3ec;
+	--text-color-disabled: #b8b8b8;
+	--accent-color: #373b53;
+	--button-primary: #00a3ed;
+	--button-success: #00bc69;
+	--button-utility: #7653be;
+	--button-danger: #ff5b35;
+}
+
+[date-theme="light"] {
+	--bg-color: #e4e0dc;
+	--text-color: #111;
+}
+
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition: all 500ms !important;
+  transition-delay: 0 !important;
+}
+
 body {
 	margin: 0;
 	padding: 0;
-	color: #0c0e16;
-	background: #f8f8fb;
+	color: var(--text-color);
+	background: var(--bg-color);
 	height: 100%;
 	font-size: 1.2rem;
 }
+
 
 p {
 	font-weight: 500;

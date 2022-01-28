@@ -9,13 +9,15 @@
 }
 
 .item {
-	background: #fff;
+	background: rgb(30, 30, 39);
+	border: 1px solid rgb(66, 66, 92);
 	border-radius: 8px;
 	box-shadow: 0 10px 10px -10px rgba(72, 84, 159, 0.1);
+	transition: all 0.25s ease;
 }
 
 .item:hover {
-	border: 1px solid #7c5dfa;
+	border: 1px solid #5f5ddb;
 }
 
 .link {
@@ -35,11 +37,11 @@
 	grid-area: id;
 	font-size: 1.2rem;
 	font-weight: 700;
-	color: #0c0e16;
+	color: #ddd;
 }
 
 .hash {
-	color: #7e88c3;
+	color: var(--text-color-secondary);
 }
 
 .client-name {
@@ -47,14 +49,14 @@
 	justify-self: end;
 	font-size: 1.2rem;
 	font-weight: 500;
-	color: #858bb2;
+	color: var(--text-color-secondary);
 }
 
 .payment-due {
 	grid-area: paymentDue;
 	font-size: 1.2rem;
 	font-weight: 500;
-	color: #858bb2;
+	color: var(--text-color-secondary);
 	margin-bottom: 10px;
 }
 
@@ -90,6 +92,7 @@
 	}
 
 	.total {
+		color: var(--text-color);
 		grid-area: unset;
 		justify-self: end;
 	}

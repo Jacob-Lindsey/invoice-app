@@ -3,17 +3,17 @@
 }
 
 .back {
-	font-size: 1.2rem;
+	color: var(--text-color);
 	display: flex;
+	font-size: 1.2rem;
 	font-weight: 700;
-	text-decoration: none;
-	color: #0c0e16;
-	transition: color 250ms ease-in-out;
 	gap: 23px;
+	text-decoration: none;
+	transition: color 250ms ease-in-out;
 }
 
 .back svg {
-	color: #7c5dfa;
+	color: var(--text-color-secondary);
 }
 
 .back:hover {
@@ -21,7 +21,7 @@
 }
 
 .control {
-	background: #fff;
+	background: var(--bg-color-80);
 	display: grid;
 	grid-template-columns: 1fr auto;
 	align-items: center;
@@ -31,13 +31,13 @@
 }
 
 .title {
+	color: var(--text-color);
 	font-size: 1.2rem;
 	font-weight: 500;
-	color: #858bb2;
 }
 
 .actions {
-	background-color: #fff;
+	background: var(--bg-color-80);
 	padding: 24px;
 	position: fixed;
 	left: 0;

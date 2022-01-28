@@ -1,6 +1,7 @@
 import { useGlobalContext } from "../../context";
 import styles from "./List.module.css";
 import Button from "../Button/Button";
+import { IoTrashBinSharp } from "react-icons/io5";
 
 const List = () => {
     const {
@@ -81,7 +82,7 @@ const List = () => {
                                 className={styles.delIcon}
                                 onClick={() => handleItemsRemove(index)}
                             >
-                                X
+                                <IoTrashBinSharp />
                             </button>
                         </div>
                     </div>

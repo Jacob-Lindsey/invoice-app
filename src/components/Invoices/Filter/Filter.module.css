@@ -3,14 +3,15 @@
 }
 
 .filter {
-	display: flex;
 	align-items: center;
-	cursor: pointer;
-	border: none;
 	background: transparent;
-	gap: 12px;
+	border: none;
+	color: var(--text-color);
+	cursor: pointer;
+	display: flex;
 	font-size: 1.2rem;
 	font-weight: 700;
+	gap: 12px;
 }
 
 .filter svg {
@@ -22,24 +23,25 @@
 }
 
 .list {
-	position: absolute;
-	z-index: 100;
-	top: 46px;
-	left: -50px;
-	width: 192px;
-	margin: 0;
-	background: #fff;
+	background: var(--bg-color-80);
+	border: 1px solid var(--bg-color-60);
 	border-radius: 8px;
-	padding: 24px;
-	list-style: none;
-	box-shadow: 0 10px 20px 0 rgba(72, 84, 159, 0.25);
 	display: grid;
-	grid-template-rows: repeat(3, 1fr);
 	gap: 16px;
+	grid-template-rows: repeat(3, 1fr);
+	left: -50px;
+	list-style: none;
+	margin: 0;
+	padding: 24px;
+	position: absolute;
+	top: 46px;
+	width: 192px;
+	z-index: 100;
 }
 
 .option {
 	border: none;
+	color: var(--text-color);
 	display: block;
 	width: 100%;
 	font-size: 1.2rem;
@@ -53,7 +55,7 @@
 	content: '';
 	width: 16px;
 	height: 16px;
-	background: #dfe3fa;
+	background: var(--bg-color);
 	margin-right: 13px;
 	border-radius: 2px;
 	display: inline-block;
